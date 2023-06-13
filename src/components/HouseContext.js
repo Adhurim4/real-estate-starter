@@ -30,7 +30,7 @@ const HouseContextProvider = ({children}) => {
       return house.type;
     })
     // Remove Duplicate
-    const  uniqueProperties = ['Location Any ', ... new Set(allProperties)]
+    const  uniqueProperties = ['Property Any ', ... new Set(allProperties)]
     setProperties(uniqueProperties);
   },[])
 
